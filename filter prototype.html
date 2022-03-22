@@ -24,9 +24,8 @@
     </FORM>
     <script>
         function imgChange(parts, id) {
-            /*選択されているメニューを変数へ格納*/
             fname = parts.options[parts.selectedIndex].value;
-            /*選択された画像のパスを送る*/
+            /*send a path for the selected image*/
             if (fname == 0) id.src = "averagerent.png";
             if (fname == 1) id.src = "population.png";
             if (fname == 2) id.src = "everybody.jpeg";
