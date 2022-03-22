@@ -18,8 +18,8 @@
         <!--change the variable according to what is selected in the dropdown menu-->
         <div style="position: relative; left:270px; bottom:270px">
             <SELECT name="channel" size="1" onchange="imgChange(this,program1)">
-                <OPTION value="0">Yona
-                <OPTION value="1">Jaeha1
+                <OPTION value="0">Average rent
+                <OPTION value="1">Population
                 <OPTION value="2">The squad
                 <OPTION value="3">Haku and Jaeha
             </SELECT>
@@ -30,8 +30,8 @@
             /*選択されているメニューを変数へ格納*/
             fname = parts.options[parts.selectedIndex].value;
             /*選択された画像のパスを送る*/
-            if (fname == 0) id.src = "Yona.jpg.webp";
-            if (fname == 1) id.src = "Jaeha1.webp";
+            if (fname == 0) id.src = "averagerent.png";
+            if (fname == 1) id.src = "population.png";
             if (fname == 2) id.src = "everybody.jpeg";
             if (fname == 3) id.src = "Haku_and_Jaeha.gif";
         }
