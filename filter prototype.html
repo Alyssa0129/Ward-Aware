@@ -11,19 +11,16 @@
 <body>
   <h1>Ward Aware</h1>
 
-
-  
     <FORM>
-        <P><IMG src="Yona.jpg.webp" height="250" width="400" id="program1" alt=""></p>
         <!--change the variable according to what is selected in the dropdown menu-->
-        <div style="position: relative; left:270px; bottom:270px">
+        <div style="position: relative; left:450px; bottom:0px">
             <SELECT name="channel" size="1" onchange="imgChange(this,program1)">
-                <OPTION value="0">Average rent
+                <OPTION value="0">Average Rent
                 <OPTION value="1">Population
                 <OPTION value="2">The squad
-                <OPTION value="3">Haku and Jaeha
             </SELECT>
         </div>
+          <P><IMG src="averagerent.png" height="500" width="600" id="program1" alt=""></p>
     </FORM>
     <script>
         function imgChange(parts, id) {
@@ -33,8 +30,10 @@
             if (fname == 0) id.src = "averagerent.png";
             if (fname == 1) id.src = "population.png";
             if (fname == 2) id.src = "everybody.jpeg";
-            if (fname == 3) id.src = "Haku_and_Jaeha.gif";
         }
     </script>
+
+  
+    
 </body>
 </html>
